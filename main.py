@@ -176,6 +176,11 @@ class SpaceGame(GameApp):
         elif event.keysym == 'Right':
             self.ship.stop_turn('RIGHT')
 
+    def process_collisions(self):
+        self.process_bullet_enemy_collisions()
+        # -- comment out this line to prevent ship collision
+        # self.process_ship_enemy_collision()
+
 
 if __name__ == "__main__":
     root = tk.Tk()
