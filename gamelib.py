@@ -108,8 +108,7 @@ class GameApp(ttk.Frame):
         self.create_canvas()
 
         self.elements = []
-        self.init_game()
-        
+
         self.key_pressed_handler = KeyboardHandler()
         self.key_released_handler = KeyboardHandler()
 
